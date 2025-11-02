@@ -11,29 +11,36 @@
 <!-- Converting the number -->
             <section class="convert-section">
                     <h1>Metric/Imperial Unit Conversion</h1>
-                    <input id="input-el" type="number"></input>
-                    <button class="convert-btn">Convert</button>
+                    <input id="input-el" type="text" placeholder="0"></input>
+                    <button id="convert-btn">Convert</button>
+
+                    <!-- resetting the number -->
+
+                    <button id="reset-btn">Reset</button>
             </section>
+
+
+
 
 <!-- Results of the conversion -->
 
             <section class="LVM-section">
-                <div class="Length">
+                <div id="Length">
                     <h1>Length (Meter/Feet)</h1>
-                    <p>20 meters = 65.616 feet | </p>
+                   <p id="length-el">0 meters = 0 feet | 0 feet = 0.000 meters</p>
                 </div>
-                        <div class="Volume">
+                        <div id="Volume">
                             <h1>Volume (Liters/Gallons)</h1>
-                            <p id>20 liters = 65.616 feet | </p>
+                            <p id = "volume-el">0 liters = 0 gallons | 0 gallons = 0 liters </p>
                         </div>
-                                <div class="Mass">
+                                <div id="Mass">
                                     <h1>Mass (Kilograms/Pounds)</h1>
-                                    <p>20 meters = 65.616 feet | </p>
+                                    <p id="mass-el">0 kilograms = 0 Pounds | 0 Pounds = 0 kilograms </p>
                                 </div>
 
 
 
         </section> 
-
+<script src="index.js"></script>
 </body>
 </html>

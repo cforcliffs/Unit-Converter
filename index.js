@@ -1,18 +1,25 @@
 /*
-1 meter = 3.281 feet
+
 1 liter = 0.264 gallon
 1 kilogram = 2.204 pound
 */
 
-let myConversion = []
+// measurements//
 
-const length = document.getElementById("Length")
-const volume = document.getElementById("Volume")
-const mass = document.getElementById("Mass")
+const meterToFeet = 3.281
+const litertoGallon = 0.264
+const kilogramtoPound = 2.204
+
+
+
+let convertBtn = document.getElementById("convert-btn")
+let resetBtn = document.getElementById("reset-btn")
 
 let inputEl = document.getElementById("input-el")
 
-const convertBtn = document.getElemenntById("convert-btn")
+let lengthEl = document.getElementById("length-el")
+let volumeEl = document.getElementById("volume-el")
+let massEl = document.getElementById("mass-el")
 
 
 
@@ -22,24 +29,37 @@ const convertBtn = document.getElemenntById("convert-btn")
 
     convertBtn.addEventListener("click", function(){
 
-        inputEl = ""
-    
+
+    let baseValue = inputEl.value
+    lengthEl.textContent = `${baseValue} meters = ${baseValue * meterToFeet} feet | ${baseValue * meterToFeet} feet = ${baseValue} meters  `
+
+    volumeEl.textContent = `${baseValue} liters = ${baseValue * litertoGallon } feet | ${baseValue * litertoGallon } feet  = ${baseValue} liters `
+
+    massEl.textContent = `${baseValue} kilograms = ${baseValue * kilogramtoPound} feet | ${baseValue * kilogramtoPound} feet = ${baseValue} kilograms   `
     
     })
 
 
 
 
+    resetBtn.addEventListener("click", function(){
+
+   inputEl.value = ""
 
 
-//change the paragraphs acordiningly
+   lengthEl.textContent = `0 meters = 0 feet | 0 feet = 0 meters  `
 
-function convert(){
+   volumeEl.textContent = `0 liters = 0 gallons | 0 gallons  = 0 liters `
+
+   massEl.textContent = `0 kilograms = 0 pounds| 0 pounds = 0 kilograms   `
+   
+
+
+    })
 
 
 
-    
-    }
+
 
 
 

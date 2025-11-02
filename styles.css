@@ -5,6 +5,13 @@ body{
     color: white;
 }
 
+
+/* phone version only */
+
+@media (max-width: 430px){
+
+
+/* Top section with convert button and reset buttton */
 .convert-section{
 
     display: flex;
@@ -38,10 +45,12 @@ body{
 
     font-size: 15px;
     padding: 12px 48px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 6px;
 }
+
+
 
 button:hover{
 
@@ -49,10 +58,17 @@ button:hover{
     background-color: rgb(177, 166, 166);
 }
 
+
+
+
+
+/* Length, volume and mass section  */
+
+
 .LVM-section{
     margin-top: 40px;
-    display: flex;
-    justify-content: top;
+    display: block;
+    justify-content: ce;
     align-items: center;
     flex-direction: column;
 
@@ -60,10 +76,15 @@ button:hover{
 
 div{
     border: 3px solid white ;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
-.Length{
+
+
+
+/* the same design for each box */
+
+#Length{
 
     padding: 25px;
     color: #0C4A6E;
@@ -72,7 +93,7 @@ div{
     background-color: white;
 }
 
-.Volume{
+#Volume{
 
     padding: 25px;
     color: #0C4A6E;
@@ -81,11 +102,128 @@ div{
     background-color: white;
 }
 
-.Mass{
+#Mass{
 
     padding: 25px;
     color: #0C4A6E;
     margin: 20px;
     text-align: center;
     background-color: white;
+}
+
+
+}
+
+
+/* PHONE VERSION ENDS HERE */
+
+
+
+
+
+
+/* COMPUTER VERSION SIZING */
+
+@media (min-width: 431px){
+
+/* Top section with convert button and reset buttton */
+.convert-section{
+
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0C4A6E;
+
+}
+
+.convert-section h1{
+
+    margin: 60px;
+    text-align: center;
+}
+
+
+
+.convert-section input{
+
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 15px 0px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.convert-section button{
+
+    font-size: 15px;
+    padding: 12px 48px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+
+button:hover{
+
+    color: blueviolet;
+    background-color: rgb(177, 166, 166);
+}
+
+
+
+
+
+/* Length, volume and mass section  */
+
+
+.LVM-section{
+    margin-top: 40px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+div{
+    border: 3px solid white ;
+    border-radius: 20px;
+}
+
+
+
+
+/* the same design for each box */
+
+#Length{
+
+    padding: 25px 145px;
+    color: #0C4A6E;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#Volume{
+
+    padding: 25px 115px;
+    color: #0C4A6E;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#Mass{
+
+    padding: 25px 100px;
+    color: #0C4A6E;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+}
+
 }
